@@ -21,9 +21,9 @@ jobs:
       - name: Deploy Frontend Service
         run: |
           echo "Deploying frontend service"
-          railway up --service frontend
+          railway up --service frontend --project profound-sparkle
 
       - name: Deploy Backend Service
         run: |
           echo "Deploying backend service"
-          railway up --service backend
+          railway up --service backend --project profound-sparkle

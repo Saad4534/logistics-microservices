@@ -18,12 +18,12 @@ jobs:
       - name: Verify Railway CLI Version
         run: railway --version
 
-      - name: Deploy Frontend Service
+      - name: Ensure Project Exists
         run: |
-          echo "Deploying frontend service"
-          railway up --service frontend
+          echo "Linking to profound-sparkle"
+          railway project profound-sparkle || railway project create --name profound-sparkle
 
-      - name: Deploy Backend Service
+      - name: Deploy Application with Docker Compose
         run: |
-          echo "Deploying backend service"
-          railway up --service backend
+          echo "Deploying logistics-app with docker-compose"
+          railway run docker-compose up --build -d

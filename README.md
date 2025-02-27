@@ -20,38 +20,6 @@ Configurable Cross-Origin Resource Sharing for frontend-backend communication.
 ## Modular Backend
 FastAPI backend organized into separate modules for routes, models, authentication, and configuration
 
-# Project Structure
-LOGISTICS-APP/
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   ├── config.py
-│   │   ├── models.py
-│   │   ├── auth.py
-│   │   ├── dependencies.py
-│   │   └── routes/
-│   │       ├── __init__.py
-│   │       ├── shipment.py
-│   │       └── tracking.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── .env
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   │   ├── ShipmentBooking.tsx
-│   │   └── OrderTracking.tsx
-│   ├── public/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── next.config.ts
-│   ├── tailwind.config.ts
-│   └── ... (other Next.js files)
-├── docker-compose.yml
-├── .gitignore
-└── README.md
-
 # Prerequisites
 ## Docker
 Install Docker Desktop (Windows/Mac) or Docker Engine (Linux).

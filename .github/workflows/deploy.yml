@@ -18,11 +18,8 @@ jobs:
       - name: Verify Railway CLI Version
         run: railway --version
 
-      - name: Login to Railway
-        run: railway login
-
       - name: Link to Railway Project
-        run: railway link profound-sparkle
+        run: railway link logistics-app
 
       - name: Deploy Frontend Service
         run: |

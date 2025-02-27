@@ -25,32 +25,32 @@ LOGISTICS-APP/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py
-│   │   ├── main.py           # FastAPI app entry point
-│   │   ├── config.py         # Configuration (env vars, CORS origins)
-│   │   ├── models.py         # Pydantic models for request validation
-│   │   ├── auth.py           # API key authentication logic
-│   │   ├── dependencies.py   # Dependency injection (Shippo SDK, mock data)
+│   │   ├── main.py
+│   │   ├── config.py
+│   │   ├── models.py
+│   │   ├── auth.py
+│   │   ├── dependencies.py
 │   │   └── routes/
 │   │       ├── __init__.py
-│   │       ├── shipment.py   # /create-order endpoint
-│   │       └── tracking.py   # /track/{tracking_number} endpoint
-│   ├── Dockerfile            # Backend Docker configuration
-│   ├── requirements.txt      # Python dependencies
-│   └── .env                  # Environment variables (for local dev)
+│   │       ├── shipment.py
+│   │       └── tracking.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── .env
 ├── frontend/
-│   ├── app/                  # Next.js app directory (or pages/)
+│   ├── app/
 │   ├── components/
-│   │   ├── ShipmentBooking.tsx  # Component for booking shipments
-│   │   └── OrderTracking.tsx    # Component for tracking shipments
-│   ├── public/               # Static assets
-│   ├── Dockerfile            # Frontend Docker configuration
-│   ├── package.json          # Node.js dependencies
-│   ├── next.config.ts        # Next.js configuration
-│   ├── tailwind.config.ts    # Tailwind CSS configuration
+│   │   ├── ShipmentBooking.tsx
+│   │   └── OrderTracking.tsx
+│   ├── public/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── next.config.ts
+│   ├── tailwind.config.ts
 │   └── ... (other Next.js files)
-├── docker-compose.yml        # Orchestrates frontend and backend containers
-├── .gitignore                # Git ignore rules
-└── README.md                 # Project documentation
+├── docker-compose.yml
+├── .gitignore
+└── README.md
 
 # Prerequisites
 ## Docker

@@ -1,0 +1,25 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Railway CLI
+        run: curl -fsSL https://railway.app/install.sh | sh
+
+      - name: Deploy to Railway
+        env:
+          RAILWAY_TOKEN: 0f9aec32-ff91-4500-9165-60c5916af8b1
+        run: |
+          railway login --token $RAILWAY_TOKEN
+          railway link logistics-app
+          echo "Deploying frontend service"
+          railway up --service frontend
+          echo "Deploying backend service"
+          railway up --service backend

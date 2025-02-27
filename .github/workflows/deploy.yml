@@ -19,7 +19,7 @@ jobs:
         run: railway --version
 
       - name: Link to Railway Project
-        run: railway link logistics-app
+        run: railway link profound-sparkle
 
       - name: Deploy Frontend Service
         run: |

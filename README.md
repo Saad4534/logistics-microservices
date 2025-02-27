@@ -5,6 +5,44 @@ Logistics Microservices app is a full-stack application for booking and tracking
 ## Shipment Booking
 Create shipments by providing sender, receiver, and parcel details (/shipment-booking).
 
+# Project Structure
+```
+LOGISTICS-APP/
+├── backend/                    # FastAPI backend
+│   ├── app/                    # Backend application code
+│   │   ├── __init__.py         # Package initialization
+│   │   ├── main.py             # FastAPI app entry point
+│   │   ├── config.py           # Configuration (env vars, CORS origins)
+│   │   ├── models.py           # Pydantic models for request validation
+│   │   ├── auth.py             # API key authentication logic
+│   │   ├── dependencies.py     # Dependency injection (Shippo SDK, mock data)
+│   │   └── routes/             # API route handlers
+│   │       ├── __init__.py
+│   │       ├── shipment.py     # /create-order endpoint
+│   │       └── tracking.py     # /track/{tracking_number} endpoint
+│   ├── Dockerfile              # Backend Docker configuration
+│   ├── requirements.txt        # Python dependencies
+│   └── .env                    # Environment variables (for local dev)
+├── frontend/                   # Next.js frontend
+│   ├── app/                    # Next.js app directory (or pages/)
+│   ├── components/             # React components
+│   │   ├── ShipmentBooking.tsx # Component for booking shipments
+│   │   └── OrderTracking.tsx   # Component for tracking shipments
+│   ├── public/                 # Static assets
+│   ├── Dockerfile              # Frontend Docker configuration
+│   ├── package.json            # Node.js dependencies
+│   ├── next.config.ts          # Next.js configuration
+│   ├── tailwind.config.ts      # Tailwind CSS configuration
+│   ├── eslint.config.mjs       # ESLint configuration
+│   ├── next-env.d.ts           # Next.js TypeScript environment definitions
+│   ├── postcss.config.mjs      # PostCSS configuration
+│   ├── tsconfig.json           # TypeScript configuration
+│   └── README.md               # Frontend-specific documentation (optional)
+├── docker-compose.yml          # Orchestrates frontend and backend containers
+├── .gitignore                  # Git ignore rules
+└── README.md                   # Project documentation
+```
+
 ## Shipment Tracking
 Track shipments using a tracking number (/order-tracking).
 

@@ -26,7 +26,7 @@ export default function OrderTracking() {
     setIsTracking(true); // Start tracking state
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-      const apiKey = process.env.NEXT_PUBLIC_INTERNAL_API_KEY || 'your-api-key-here';
+      const apiKey = process.env.NEXT_PUBLIC_INTERNAL_API_KEY || 'myTotalySecretKey';
       const res = await axios.get(`${apiUrl}/track/${trackingNumber}`, {
         headers: {
           'X-API-Key': apiKey,

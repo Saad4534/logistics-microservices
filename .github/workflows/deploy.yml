@@ -18,12 +18,12 @@ jobs:
       - name: Verify Railway CLI Version
         run: railway --version
 
-      - name: Install Docker Compose
+      - name: Deploy Frontend Service
         run: |
-          sudo apt-get update
-          sudo apt-get install -y docker-compose
+          echo "Deploying frontend service"
+          railway up --service frontend
 
-      - name: Deploy with Docker Compose
+      - name: Deploy Backend Service
         run: |
-          echo "Deploying profound-sparkle with docker-compose"
-          railway run --service profound-sparkle docker-compose up --build -d
+          echo "Deploying backend service"
+          railway up --service backend

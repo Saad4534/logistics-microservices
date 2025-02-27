@@ -20,7 +20,7 @@ export default function Disclaimer() {
       <p>
         Disclaimer: This project is specifically developed for the Digit Labs assignment by Saad Nadeem and is open source.{' '}
         <Link
-          href="https://github.com/yourusername/logistics-microservices" // Replace with your actual repo URL
+          href="https://github.com/Saad4534/logistics-microservices" // Replace with your actual repo URL
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:text-blue-300 transition-colors"

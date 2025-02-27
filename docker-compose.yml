@@ -23,4 +23,5 @@ services:
     environment:
       - INTERNAL_API_KEY=myTotalySecretKey
       - SHIPPO_API_KEY=shippo_test_b0d2ab85b1ba800ca8cf2a58cc2e404eaf9f8a0d
+      - CORS_ORIGINS=http://localhost:3000
     restart: always

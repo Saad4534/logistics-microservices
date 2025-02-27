@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000; /* Pure black */
+  --foreground: #e5e7eb; /* Light gray for text */
+}
+
+body {
+  background: transparent; /* Let the main div handle the background */
+  color: var(--foreground);
+  font-family: 'Poppins', sans-serif; /* Assuming Poppins is added */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #374151 inset !important; /* Larger shadow to cover entire input */
+  background-color: #374151 !important; /* Explicitly set background */
+  -webkit-text-fill-color: #e5e7eb !important; /* Matches text-gray-200 */
+  border-color: #4b5563 !important; /* Matches border-gray-700 */
+  transition: background-color 5000s ease-in-out 0s !important; /* Prevent fade effect */
+}
+
+/* Ensure no white edges in other browsers */
+input:-moz-autofill,
+input:autofill {
+  box-shadow: 0 0 0 1000px #374151 inset !important;
+  background-color: #374151 !important;
+  color: #e5e7eb !important;
+  border-color: #4b5563 !important;
+}

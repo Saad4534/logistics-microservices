@@ -18,12 +18,7 @@ jobs:
       - name: Verify Railway CLI Version
         run: railway --version
 
-      - name: Ensure Project Exists
+      - name: Deploy Application
         run: |
-          echo "Linking to profound-sparkle"
-          railway project profound-sparkle || railway project create --name profound-sparkle
-
-      - name: Deploy Application with Docker Compose
-        run: |
-          echo "Deploying logistics-app with docker-compose"
-          railway run docker-compose up --build -d
+          echo "Deploying logistics-app to profound-sparkle"
+          railway up

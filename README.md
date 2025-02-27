@@ -1,10 +1,6 @@
 # Logistics Microservices
 Logistics Microservices app is a full-stack application for booking and tracking shipments using the Shippo API and adding packages to the weekly calendar. The frontend is built with Next.js (React) and Tailwind CSS, while the backend is a FastAPI application with a modular structure. The app is containerized using Docker and orchestrated with Docker Compose, making it easy to run locally or deploy.
 
-# Features
-## Shipment Booking
-Create shipments by providing sender, receiver, and parcel details (/shipment-booking).
-
 # Project Structure
 ```
 LOGISTICS-APP/
@@ -42,6 +38,11 @@ LOGISTICS-APP/
 ├── .gitignore                  # Git ignore rules
 └── README.md                   # Project documentation
 ```
+
+
+# Features
+## Shipment Booking
+Create shipments by providing sender, receiver, and parcel details (/shipment-booking).
 
 ## Shipment Tracking
 Track shipments using a tracking number (/order-tracking).

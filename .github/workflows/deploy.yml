@@ -18,9 +18,6 @@ jobs:
       - name: Verify Railway CLI Version
         run: railway --version
 
-      - name: Link to Railway Project
-        run: railway link profound-sparkle
-
       - name: Deploy Frontend Service
         run: |
           echo "Deploying frontend service"

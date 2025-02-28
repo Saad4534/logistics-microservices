@@ -59,6 +59,15 @@ Configurable Cross-Origin Resource Sharing for frontend-backend communication.
 ### Modular Backend
 FastAPI backend organized into separate modules for routes, models, authentication, and configuration
 
+# Limitations
+### Shipment Booking
+Shippo only allows to use courier USPS to book orders in Sandbox Environment. This limits us to only use valid United States address.
+Providing any other address other than valid US address will result in error thrown by the Shippo API for shipment booking.
+
+### Shipment Tracking
+Shippo provides a mock response for every request regardless of the tracking number in Sandbox environment.
+A tracking numbers will lead to the same response by the Shippo API.
+
 # Prerequisites
 ### Docker
 Install Docker Desktop (Windows/Mac) or Docker Engine (Linux).

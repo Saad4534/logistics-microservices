@@ -41,22 +41,22 @@ LOGISTICS-APP/
 
 
 # Features
-## Shipment Booking
+### Shipment Booking
 Create shipments by providing sender, receiver, and parcel details (/shipment-booking).
 
-## Shipment Tracking
+### Shipment Tracking
 Track shipments using a tracking number (/order-tracking).
 
-## Package Calendar
+### Package Calendar
 Add packages to the weekly calendar (Front-end only).
 
-## API Authentication
+### API Authentication
 Secure API endpoints with an X-API-Key header.
 
-## CORS Support
+### CORS Support
 Configurable Cross-Origin Resource Sharing for frontend-backend communication.
 
-## Modular Backend
+### Modular Backend
 FastAPI backend organized into separate modules for routes, models, authentication, and configuration
 
 # Prerequisites

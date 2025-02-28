@@ -85,6 +85,7 @@ https://www.python.org/downloads/
 
 2. Configure Environment Variables
 Create a .env file in the backend/ directory with the following:
+
   ```
   SHIPPO_API_KEY=shippo_test_b0d2ab85b1ba800ca8cf2a58cc2e404eaf9f8a0d
   INTERNAL_API_KEY=myTotalySecretKey
